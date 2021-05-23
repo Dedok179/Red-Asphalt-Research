@@ -8,7 +8,7 @@
 	int unk;
 	short frame_x;
 	short frame_y;
-	bytes[40] pad;
+	bytes[] pad[40];
 }header;
 
 {
