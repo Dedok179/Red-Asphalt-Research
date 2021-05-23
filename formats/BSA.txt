@@ -1,0 +1,19 @@
+//-----------------------
+//Red Asphalt BSA archive format
+//-----------------------
+
+{
+	short pad;
+	short files_count;
+	int unk;
+	short frame_x;
+	short frame_y;
+	bytes[40] pad;
+}header;
+
+{
+		short res_x;
+		short res_y;
+		int file_size;
+		int pad;
+}file_header * header->files_count;
