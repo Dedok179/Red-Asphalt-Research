@@ -34,6 +34,6 @@ public static class BSA
             byte[] buff = reader.ReadBytes(file_size[j]);
             File.WriteAllBytes("BSdata_" + j.ToString() + "_"+x[j].ToString()+"x"+y[j].ToString()+".bs", buff);
         }
-
+        reader.Close();
     }
 }
